@@ -4,11 +4,12 @@ case "$1" in
     configure)
 
         chmod +x /usr/share/yavdr/events/actions/*
-
+	
         /usr/bin/signal-event addons-update
 	mkdir -p /var/lib/vdr/.ultrastar
 	chown -R vdr:vdr /var/lib/vdr/.ultrastar
-        ;;
+        ln -s /srv/audio /var/lib/vdr/.ultrastar/songs
+	;;
 
 
 esac
