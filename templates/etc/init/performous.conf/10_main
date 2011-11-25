@@ -14,5 +14,5 @@ vdr-dbus-send /Remote remote.Enable ||:
 /sbin/initctl emit --no-wait vdr-frontend-restart
 end script
 
-exec su -c "performous --mics alsa:hw:0" vdr
+exec su -c "performous " vdr
 
